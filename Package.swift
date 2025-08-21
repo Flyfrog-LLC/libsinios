@@ -17,7 +17,7 @@ let package = Package(
         .binaryTarget(
             name: "Libbox",
             url: "https://github.com/Flyfrog-LLC/libsinios/releases/download/v1.12.2/Libbox.xcframework.zip",
-            checksum: "759eaf89f4ede877439776018a47be1e067ecf05aca9de0bd6f70f4df5ce06af"
+            checksum: "f4ce6794276766f5fa39434ee57471f125950c12b3f27d951a806ebb0e5fa22b"
         )
     ]
 )
