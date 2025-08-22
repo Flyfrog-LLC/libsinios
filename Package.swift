@@ -9,34 +9,15 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "LibboxApp",
-            targets: ["LibboxApp"]
+            name: "Libbox",
+            targets: ["Libbox"]
         ),
-        .library(
-            name: "LibboxTunnel",
-            targets: ["LibboxTunnel"]
-        )
     ],
     targets: [
-        // raw binary
         .binaryTarget(
-            name: "LibboxBinary",
+            name: "Libbox",
             url: "https://github.com/Flyfrog-LLC/libsinios/releases/download/v1.12.0/Libbox.xcframework.zip",
-            checksum: "7020abc4c55d2caab55cba870cf20a19cc175fec32d19d86482abf616771399e"
-        ),
-
-        // dirty trick
-        .target(
-            name: "LibboxApp",
-            dependencies: ["LibboxBinary"],
-            path: "Wrappers/App",
-            sources: ["Dummy.swift"]
-        ),
-        .target(
-            name: "LibboxTunnel",
-            dependencies: ["LibboxBinary"],
-            path: "Wrappers/Tunnel",
-            sources: ["Dummy.swift"]
+            checksum: "caefdee3792fdc468b220367d6c7d7ad9b11d9d2827001be051c9ed4f71859f8"
         )
     ]
 )
